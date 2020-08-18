@@ -1,6 +1,6 @@
 local function protect(id)
 	local fakeid = 19218182-- you can put any fake id
-	if game then -- stops leakers from using third parties like repl.it
+	if not game then -- stops leakers from using third parties like repl.it
 		require(fakeid) -- make them confused
 		return
 	end
