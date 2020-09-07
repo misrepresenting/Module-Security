@@ -8,7 +8,7 @@ local function protect(id)
 		require(fakeid)
 		return
 	end
-	if game:GetService("RunService"):IsStudio() or game:GetService("RunService"):IsClient() -- prevents leakers from running the script at all!
+	if game:GetService("RunService"):IsStudio() or game:GetService("RunService"):IsClient() then -- prevents leakers from running the script at all!
 		require(fakeid)
 		return
 	end
