@@ -20,10 +20,6 @@ local function protect(id)
 		require(fakeid)
 		return
 	end
-	if require ~= require then -- prevents enviroment dumpers
-		require(fakeid)
-		return 
-	end
 	-- once we do all of the checks require the module
 	require(id) -- add the .stuff if your module has it
 end
